@@ -11,12 +11,17 @@ var prezzoBiglietto = 0.21 * lunghezzaViaggio;
 if (etaPasseggero < 18) {
   prezzoBiglietto = prezzoBiglietto - ((prezzoBiglietto / 100) * 20);
   console.log(prezzoBiglietto);
+  alert('applicato sconto del 20%');
+  document.writeln("il tuo biglietto costa " + prezzoBiglietto + " euro");
 }
 // sconto 40% se over 65
 else if (etaPasseggero >= 65) {
   prezzoBiglietto = prezzoBiglietto - ((prezzoBiglietto / 100) * 40);
   console.log(prezzoBiglietto);
+  alert('applicato sconto del 40%');
+  document.writeln("il tuo biglietto costa " + prezzoBiglietto + " euro");
 } else {
   var prezzoBiglietto = 0.21 * lunghezzaViaggio;
   console.log(prezzoBiglietto);
+  document.writeln("il tuo biglietto costa " + prezzoBiglietto + " euro");
 }
